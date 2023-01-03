@@ -50,13 +50,13 @@
 <%--                <p><a href="./book.jsp?id=<%=book.getBookId()%>" class="btn btn-secondary" role="button">--%>
 <%--                    상세 정보 &raquo;</a>--%>
                 <img src="./resources/images/<%=rs.getString("b_fileName")%>" style="width: 300px" alt="">
-                <h3><%=rs.getString("b_name")%></h3>
-                <p><%=rs.getString("b_description")%></p>
-                <p><%=rs.getString("b_author")%></p>
+                <h3><%=rs.getString("name")%></h3>
+                <p><%=rs.getString("description")%></p>
+                <p><%=rs.getString("author")%></p>
                 <p><%=rs.getString("publisher")%></p>
-                <p><%=rs.getString("b_unitPrice")%></p>
-                <p><%=rs.getString("b_category")%></p>
-                <p><%=rs.getString("b_condition")%></p>
+                <p><%=rs.getString("unitPrice")%></p>
+                <p><%=rs.getString("category")%></p>
+                <p><%=rs.getString("condition")%></p>
                 <p><%=rs.getString("b_releaseDate")%></p>
                 <p><%=rs.getString("b_totalPages")%></p>
                 <p><%=rs.getString("b_unitsInStock")%></p>
