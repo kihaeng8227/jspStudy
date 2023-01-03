@@ -16,12 +16,12 @@
             <h1 class="display-3">도서 목록</h1>
         </div>
     </div>
-    <%
-//        String realPath = request.getServletContext().getRealPath("resources/images");
-//        out.print(realPath);
-        BookRepository dao = BookRepository.getInstance();
-        ArrayList<Book> books = dao.getAllBooks();
-    %>
+<%--    <%--%>
+<%--//        String realPath = request.getServletContext().getRealPath("resources/images");--%>
+<%--//        out.print(realPath);--%>
+<%--//        BookRepository dao = BookRepository.getInstance();--%>
+<%--//        ArrayList<Book> books = dao.getAllBooks();--%>
+<%--    %>--%>
 
     <div class="container">
         <div class="row">
@@ -31,7 +31,7 @@
 <%--            %>--%>
             <%@ include file="dbconn.jsp"%>
             <%
-                String sql = "select * from product";
+                String sql = "select * from book";
                 pstmt = conn.prepareStatement(sql);
                 rs = pstmt.executeQuery();
                 while (rs.next()) {
@@ -49,17 +49,18 @@
 <%--                <p><%=book.getUnitsInStock()%></p>--%>
 <%--                <p><a href="./book.jsp?id=<%=book.getBookId()%>" class="btn btn-secondary" role="button">--%>
 <%--                    상세 정보 &raquo;</a>--%>
-                <img src="./resources/images/<%=rs.getString("b_fileName")%>" style="width: 300px" alt="">
-                <h3><%=rs.getString("name")%></h3>
-                <p><%=rs.getString("description")%></p>
-                <p><%=rs.getString("author")%></p>
-                <p><%=rs.getString("publisher")%></p>
-                <p><%=rs.getString("unitPrice")%></p>
-                <p><%=rs.getString("category")%></p>
-                <p><%=rs.getString("condition")%></p>
-                <p><%=rs.getString("b_releaseDate")%></p>
-                <p><%=rs.getString("b_totalPages")%></p>
-                <p><%=rs.getString("b_unitsInStock")%></p>
+                <img src="./resources/images/<%=rs.getString("fileName")%>" style="width: 300px" alt="">
+                <h3>도서명 : <%=rs.getString("name")%></h3>
+                <p>도서 아이디 : <%=rs.getString("bookId")%></p>
+                <p>가격 : <%=rs.getString("unitPrice")%>원</p>
+                <p>저자 : <%=rs.getString("author")%></p>
+                <p>설명 : <%=rs.getString("description")%></p>
+                <p>출판사 : <%=rs.getString("publisher")%></p>
+                <p>카테고리 : <%=rs.getString("category")%></p>
+                <p>재고 수 : <%=rs.getString("unitsInStock")%></p>
+                <p>페이지 수 : <%=rs.getString("totalPages")%></p>
+                <p>출판일 : <%=rs.getString("releaseDate")%></p>
+                <p>상태 : <%=rs.getString("condition")%></p>
                 <p>
                     <a href="./book.jsp?id=<%=rs.getString("bookId")%>" class="btn btn-secondary" role="button">
                         상세 정보 &raquo;</a>

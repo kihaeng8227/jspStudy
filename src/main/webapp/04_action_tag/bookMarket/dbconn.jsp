@@ -1,4 +1,4 @@
-<%@ page contentType="text/html; charset=UTF-8" %>
+<%--<%@ page contentType="text/html; charset=UTF-8" %>--%>
 <%@ page import="java.sql.*" %>
 <%
     Connection conn = null;
@@ -6,7 +6,7 @@
     ResultSet rs = null;
 
     try {
-        String url = "jdbc:mariadb://localhost:3306/sample";
+        String url = "jdbc:mariadb://localhost:3306/BookMarketDB";
         String user = "root";
         String password = "9834";
 

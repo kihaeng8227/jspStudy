@@ -5,6 +5,7 @@
       <map>
         <entry key="file://$PROJECT_DIR$/src/main/webapp/04_action_tag/bookMarket/addBook.jsp" value="file://$PROJECT_DIR$/src/main/webapp/04_action_tag/bookMarket" />
         <entry key="file://$PROJECT_DIR$/src/main/webapp/04_action_tag/bookMarket/books.jsp" value="file://$PROJECT_DIR$/src/main/webapp/04_action_tag/bookMarket" />
+        <entry key="file://$PROJECT_DIR$/src/main/webapp/04_action_tag/bookMarket/processAddBook.jsp" value="file://$PROJECT_DIR$/src/main/webapp/04_action_tag/bookMarket" />
       </map>
     </option>
   </component>
