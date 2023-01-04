@@ -37,7 +37,7 @@
 
         <div class="col-md-4">
 
-            <img src="./resources/images/<%=rs.getString("fileName")%>" style="width: 100%" alt="">
+            <img src="../resources/images/<%=rs.getString("fileName")%>" style="width: 100%" alt="">
             <h3><%=rs.getString("name")%></h3>
             <p><%=rs.getString("description")%></p>
             <p><%=rs.getString("unitPrice")%>원</p>
@@ -45,7 +45,7 @@
                     <%
                         if (edit.equals("update")) {
                     %>
-                <a href="./updateBook.jsp?id=<%=rs.getString("bookId")%>" class="btn btn-success" role="button">
+                <a href="updateBook.jsp?id=<%=rs.getString("bookId")%>" class="btn btn-success" role="button">
                     수정 &raquo;</a>
                     <%
                             } else if (edit.equals("delete")) {

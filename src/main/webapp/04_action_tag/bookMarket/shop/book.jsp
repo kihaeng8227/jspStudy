@@ -63,10 +63,10 @@
       <p>출판일 : <%=rs.getString("releaseDate")%></p>
       <p>상태 : <%=rs.getString("condition")%></p>
       <p>
-      <form name="addForm" action="./addCart.jsp?id=<%=bookId%>" method="post">
+      <form name="addForm" action="addCart.jsp?id=<%=bookId%>" method="post">
         <a href="#" class="btn btn-info" onclick="addToCart()"> 상품 주문 &raquo;</a>
-        <a href="./cart.jsp" class="btn btn-warning"> 장바구니 &raquo;</a>
-        <a href="./books.jsp" class="btn btn-secondary"> 상품 목록 &raquo;</a>
+        <a href="cart.jsp" class="btn btn-warning"> 장바구니 &raquo;</a>
+        <a href="books.jsp" class="btn btn-secondary"> 상품 목록 &raquo;</a>
       </form>
     </div>
     <%

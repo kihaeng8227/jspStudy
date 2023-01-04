@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css" />
     <title>주문 완료</title>
 </head>
 <body>
@@ -35,7 +35,7 @@
         <p> 주문번호 : <% out.println(shipping_cartId); %>
     </div>
     <div class="container">
-        <p><a href="./books.jsp" class="btn btn-secondary"> &laquo; 상품 목록</a>
+        <p><a href="books.jsp" class="btn btn-secondary"> &laquo; 상품 목록</a>
     </div>
 </body>
 </html>

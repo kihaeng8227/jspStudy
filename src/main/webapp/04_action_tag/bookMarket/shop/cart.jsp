@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
     <meta charset="UTF-8">
     <title>장바구니</title>
 </head>
@@ -25,7 +25,7 @@
             <tr>
 <%--                <td align="left"><a href="./deleteCart.jsp?cartId=<%=cartId%>" class="btn btn-danger">삭제하기</a></td>--%>
                 <td align="left"><input type="button" id="totalDel" value="삭제하기" class="btn btn-danger"></td>
-                <td align="right"><a href="./shippingInfo.jsp?cartId=<%= cartId%>" class="btn btn-success">주문하기</a></td>
+                <td align="right"><a href="shippingInfo.jsp?cartId=<%= cartId%>" class="btn btn-success">주문하기</a></td>
             </tr>
         </table>
     </div>
@@ -56,7 +56,7 @@
                 <td><%=book.getUnitPrice()%></td>
                 <td><%=book.getQuantity()%></td>
                 <td><%=total%></td>
-                <td><a href="./removeCart.jsp?id=<%=book.getBookId()%>" class="badge badge-danger">삭제</a></td>
+                <td><a href="removeCart.jsp?id=<%=book.getBookId()%>" class="badge badge-danger">삭제</a></td>
             </tr>
             <%
                 }
@@ -69,7 +69,7 @@
                 <th></th>
             </tr>
         </table>
-        <a href="./books.jsp" class="btn btn-secondary"> &laquo; 쇼핑 계속하기</a>
+        <a href="books.jsp" class="btn btn-secondary"> &laquo; 쇼핑 계속하기</a>
     </div>
 </div>
 <script>

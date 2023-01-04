@@ -1,8 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
-    <script type="text/javascript" src="./resources/js/validation.js"></script>
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+    <script type="text/javascript" src="../resources/js/validation.js"></script>
     <title>상품 등록</title>
 </head>
 <body>
@@ -16,8 +16,8 @@
     <div class="text-right">
         <a href="logout.jsp" class="btn btn-sm btn-success pull-right">logout</a>
     </div>
-    <form name="newBook" action="./processAddBook.jsp" class="form-horizontal" method="post"
-    enctype="multipart/form-data">
+    <form name="newBook" action="processAddBook.jsp" class="form-horizontal" method="post"
+          enctype="multipart/form-data">
         <div class="form-group row">
             <label class="col-sm-2">도서 아이디</label>
             <div class="col-sm-3">

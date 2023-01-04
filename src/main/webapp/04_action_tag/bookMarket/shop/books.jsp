@@ -49,7 +49,7 @@
 <%--                <p><%=book.getUnitsInStock()%></p>--%>
 <%--                <p><a href="./book.jsp?id=<%=book.getBookId()%>" class="btn btn-secondary" role="button">--%>
 <%--                    상세 정보 &raquo;</a>--%>
-                <img src="./resources/images/<%=rs.getString("fileName")%>" style="width: 300px" alt="">
+                <img src="../resources/images/<%=rs.getString("fileName")%>" style="width: 300px" alt="">
                 <h3>도서명 : <%=rs.getString("name")%></h3>
                 <p>도서 아이디 : <%=rs.getString("bookId")%></p>
                 <p>가격 : <%=rs.getString("unitPrice")%>원</p>

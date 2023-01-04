@@ -27,10 +27,10 @@
 <div class="container">
     <div class="row" align="center">
         <div class="col-md-5">
-            <img src="./resources/images/<%=rs.getString("fileName")%>" style="width: 100%" alt="">
+            <img src="../resources/images/<%=rs.getString("fileName")%>" style="width: 100%" alt="">
         </div>
         <div class="col-md-7">
-            <form name="newBook" action="./processUpdateBook.jsp" class="form-horizontal" method="post" enctype="multipart/form-data">
+            <form name="newBook" action="processUpdateBook.jsp" class="form-horizontal" method="post" enctype="multipart/form-data">
                 <input type="hidden" id="bookId" name="bookId" value='<%=rs.getString("bookId")%>'>
                 <div class="form-group row">
                     <label class="col-sm-2">도서명</label>

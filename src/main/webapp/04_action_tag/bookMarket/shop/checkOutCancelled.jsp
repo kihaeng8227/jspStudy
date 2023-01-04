@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="ko">
 <head>
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css" />
     <title>title</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <h2 class="alert alert-danger">주문이 취소되었습니다.</h2>
     </div>
     <div class="container">
-        <p><a href="./books.jsp" class="btn btn-secondary">&laquo; 상품 목록</a>
+        <p><a href="books.jsp" class="btn btn-secondary">&laquo; 상품 목록</a>
     </div>
 
 </body>

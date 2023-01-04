@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css" />
     <title>상품 아이디 오류</title>
 </head>
 <body>

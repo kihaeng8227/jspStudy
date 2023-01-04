@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-  <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../resources/css/bootstrap.min.css" />
     <title>페이지 오류</title>
 </head>
 <body>
